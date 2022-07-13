@@ -1,4 +1,4 @@
 import Header from "./Header/header";
-import travel from "./Homepage/homepage";
+import HomePage from "./Homepage/homepage";
 
-export {Header,travel};
+export {Header,HomePage};
