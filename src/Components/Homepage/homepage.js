@@ -29,6 +29,7 @@ export default function HomePage(){
 
         </div>
       </div>
+      
      <footer class="footer">
         <div class="footer-list">
         <Link to = "/" class="footer-link">Home</Link>
