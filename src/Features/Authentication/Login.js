@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import img from "../../images/story-img-1.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import "./auth.css";
 import axios from "axios";
@@ -38,8 +39,6 @@ export default function Login() {
      
     }
   };
-
- 
   const submit = (e) => {
     e.preventDefault();
    loginHandler(login);
@@ -52,8 +51,12 @@ export default function Login() {
      
         <div className = "signup-page">
            <div className = "signup-page-content">
+           <button className= "form-signup-btn signup" onClick={() => testHandler()}>Test Login </button>
+
+           <img className="login-img" src = {img} alt = "login-img"/>
+           <h1 className="form-login-link" > Login to  Travel Diaries</h1>
                <form className = "signup-page-form" onSubmit={submit}>
-                   <h2>Login to Vidtube!</h2>
+                  
                    <input type = "email"
                        className = "form-signup-input"
                        name="email"
@@ -73,7 +76,6 @@ export default function Login() {
                     <p >{error}</p>
                        <Link to = "/signup" className= "form-login-link">Forgot Password?</Link>
                    <input type = "submit"  className= "form-signup-btn signup" value = "Log in"/>
-                   <p className= "form-login-link" onClick={() => testHandler()}>Test Login </p>
                </form>
            </div>
        </div>

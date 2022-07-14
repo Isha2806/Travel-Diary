@@ -1,0 +1,18 @@
+.diary{
+    min-width: 240px;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.diary-content{
+    text-align: left;
+}
+
+.diary-footer{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+

@@ -1,48 +1,18 @@
 /*Login Page */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Vollkorn", serif;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  outline: none;
-}
-html {
-  font-size: 72.5%;
-}
-
-:root {
-  --primary-color: #2b81e4;
-  --secondary-color: #eee;
-  --white-color: #fff;
-  --grey-color: #555;
-  --light-grey-color: rgb(234, 46, 46);
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  background-color: var(--secondary-color);
-  margin: 3.5rem;
-  box-shadow: 0 1rem 3rem var(--grey-color);
-  overflow: hidden;
-}
 
 
 .signup-page{
+  background: linear-gradient(rgba(6, 164, 243, 0.383), rgba(18, 113, 255, 0.3));
     width: 100%;
     height: 100vh;
     position: relative;
     display: block;
+   
+    
 }
 .signup-page-content{
 position: absolute;
-  top: 12%;
+  top: 22%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -53,13 +23,16 @@ position: absolute;
 }
   
   .signup-page-form{
+    background: linear-gradient(rgba(11, 100, 232, 0.5), rgba(18, 113, 255, 0.3)),
+    url(../..//images/header-img.webp) center no-repeat;
       display: flex;
       flex-direction: column;
       align-items:center;
+      border-radius: 17px;
   }
   .signup-page-form input{
-      width: 37rem;
-      height:4.5rem;
+      width: 57rem;
+      height:5.5rem;
       margin:1 rem;
       border-radius:0.5rem;
   }
@@ -75,11 +48,14 @@ position: absolute;
     margin: 1.2rem 0 1rem 0;  
   }
   .form-login-link:hover{
-      color:var(--grey-color);
+      color:var(--secondary-color);
   }
   .form-signup-btn{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    
+    margin: 1rem 0;
+    position: relative;
     border: 0.1rem solid var(--primary-color);
     font-size: 2rem;
     font-weight: 600;
@@ -87,15 +63,11 @@ position: absolute;
   }
   .form-signup-btn:hover{
       color: var(--grey-color);
+      opacity: 0.5;
   }
-  .signup-page-form span{
-      width: 2rem;
-      font-size: 2rem;
-      color:var(--grey-color);
-      margin: 1rem 0;
-      position: relative;
+  .login-img{
+    border-radius:39px;
+    width:25rem;
+    height: 14rem;
   }
-.login-img{
-    border: var(--white-color);
-}
   

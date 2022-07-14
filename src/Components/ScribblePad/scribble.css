@@ -1,0 +1,22 @@
+.ql-toolbar.ql-snow {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    overflow-y: hidden;
+    border:solid;
+    background-color:var(--secondary-color);
+  }
+.quill {
+    background-color:var(--light-grey-color);
+    width: 100%;
+    height: 70%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ql-toolbar button.ql-active {
+    background-color: var(--white-color);
+    border-radius: 50px;
+    
+  }
+  
