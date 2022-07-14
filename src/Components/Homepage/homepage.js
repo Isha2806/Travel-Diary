@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
+import {ScribblePad,Diary} from "../index";
 export default function HomePage(){
     return (<>
+      <Diary/>
+      <ScribblePad/>
      <footer class="footer">
         <div class="footer-list">
         <Link to = "/" class="footer-link">Home</Link>
