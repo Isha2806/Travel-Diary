@@ -7,7 +7,7 @@
     background-color:var(--secondary-color);
   }
 .quill {
-    background-color:var(--grey-color);
+    background-color:var(--light-grey-color);
     width: 100%;
     height: 70%;
     padding: 3rem;
