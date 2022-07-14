@@ -1,33 +1,15 @@
-.footer {
-    background-color: var(--primary-color);
-    padding: 4rem 0 2rem 0;
-  }
+.home{
+
+}
+.newDiary{
+
+}
+.headingText{
+
+}
+.pin{
+
+}
+.add{
   
-  .footer-list {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-link {
-    font-size: 2rem;
-    opacity: 0.8;
-    margin: 0 2rem;
-    background-color: #e8ac08;
-    padding: 0.3rem 3rem;
-    letter-spacing: 0.3rem;
-    transition: all 0.2s;
-    border-radius: 4px;
-  }
-  
-  .footer-link:hover {
-    transform: rotate(-10deg);
-    box-shadow: 0 2rem 3rem #000;
-  }
-  
-  .footer-paragraph {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    letter-spacing: 0.2rem;
-    margin-top: 5rem;
-  }
+}
