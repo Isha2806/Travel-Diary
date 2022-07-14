@@ -43,9 +43,11 @@ export default function Signup() {
   return (
     <div className="container">
         <div className = "signup-page">
+       
+
            <div className = "signup-page-content">
+                   <h1 className="form-login-link">Register here!</h1>
                <form className = "signup-page-form" onSubmit={submit}>
-                   <h2>Sign up to Vidtube!</h2>
                    <input type = "email"
                        className = "form-signup-input"
                        name="email"
@@ -63,9 +65,10 @@ export default function Signup() {
                        onChange ={inputHandler}
                        />
                     <p >{error}</p>
-                       <Link to = "/login" className= "form-login-link">Already a Member? </Link>
+                     
                    <input type = "submit"   className= "form-signup-btn signup" value="Register"/>
                </form>
+               <h1> <Link to = "/login" className= "form-login-link">Already a Member? </Link></h1>
            </div>
        </div>
    </div>
