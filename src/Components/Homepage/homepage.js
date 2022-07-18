@@ -4,35 +4,47 @@ import "./homepage.css";
 import {ScribblePad,Diary} from "../index";
 export default function HomePage(){
   const diary= {
-    heading: "isha",
-      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptatum ipsam",
+    heading: "Isha: My best Friend",
+      note: "you are the best isha",
     };
     return (<>
       <div className="home">
         <form className="newDiary">
           <input 
             type = "text"
-            placeholder="Idhar likhne ka "
-            className="headingText"
-          />
-          <ScribblePad/>
+            placeholder="Idhar likhne ka...."
+            className="headingText"/>
+           
+          <div class= "editor">
+          <ScribblePad/>  
           <button className="pin">
-            pin me
+          📌
           </button>
           <button className="add">
-            Add new
+           ➕
           </button>
+          </div>
+          
         </form>
+        </div>
+        <p className="heading-2">My Travel Notes!</p>
         <div className="listOfDiary">
+         
+          <Diary diary={diary}/>
+          <Diary diary={diary}/>
+          <Diary diary={diary}/>
+          <Diary diary={diary}/>
+          <Diary diary={diary}/>
           <Diary diary={diary}/>
           <Diary diary={diary}/>
 
-        </div>
+
+        
       </div>
       
      <footer class="footer">
         <div class="footer-list">
-        <Link to = "/" class="footer-link">Home</Link>
+        <Link to = "/" class="footer-link">PIN</Link>
         <Link to = "/" class="footer-link">Archive</Link>
         <Link to = "/" class="footer-link">Trash</Link>
         <Link to = "/" class="footer-link">Goals</Link>

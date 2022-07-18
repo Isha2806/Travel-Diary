@@ -1,11 +1,11 @@
 .home{
-  margin: 1rem auto;
+  margin: 1rem ;
   padding: 1rem;
   width: 100vw;
   grid-area: content;
 }
 .newDiary{
-  width: 75%;
+  width: 80%;
   max-width: 100%;
   height: 100%;
   padding: 1rem;
@@ -13,35 +13,71 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  z-index: 8;
+  z-index: 15;
 }
 .headingText{
-  width: 80%;
+  font-size: 5rem;
+  width: 90%;
   padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 2px;
-  border: none;
+  border-radius: 7px;
+  border: 2px;
   box-shadow: 0px 2px 0px rgb(97 97 97 / 18%);
 }
+.editor{
+  background: linear-gradient(rgba(4, 100, 243, 0.5), rgba(18, 113, 255, 0.3)),
+  url(../..//images/header-img.webp) center no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 1rem 3rem var(--light-grey-color);
+  overflow: hidden;
+  gap: 19px;
+}
 .pin{
-  top: 1rem;
-  right: 8.75rem;
+ 
   border-radius: 50px;
   height: 48px;
   width: 48px;
+ 
+}
+.pin:hover{
+  opacity: 0.3;
+  cursor: pointer;
+  height: 43px;
+  width: 43px;
 }
 .add{
-  top: 1rem;
-  right: 5rem;
-  border-radius: 50px;
   height: 48px;
   width: 48px;
+  border-radius: 50px;
+  
+}
+.add:hover{
+cursor: pointer;
+opacity: 0.3;
+  cursor: pointer;
+  height: 43px;
+  width: 43px;
+
 }
 .listOfDiary{
   grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-  width: 85%;
-  margin-top:2rem;
-  grid-gap:1rem;
+  box-shadow: 0 3rem 3rem var(--grey-color);
+  margin: 2% 5% ;
+  padding: 10px 28px ;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2.5em;
+}
+.heading-2{
+  background-color: var(--grey-color);
+  border-radius:9px ;
+  margin: 0.5em;
+  text-align: center;
+  color: var(--white-color);
+  padding: 0.5em;
+  font-size: 5rem;
+  font-weight: 900;
 }
 /* Footer */
 .footer {
@@ -76,4 +112,5 @@
   letter-spacing: 0.2rem;
   margin-top: 5rem;
 }
+
 /* End of Footer */

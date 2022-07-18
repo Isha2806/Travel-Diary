@@ -28,8 +28,8 @@ html {
 }
 
 .container {
-  margin: 3.5rem;
-  box-shadow: 0 1rem 3rem var(--grey-color);
+  margin:  1.5rem 11.5rem;
+  box-shadow: 0 3rem 3rem var(--grey-color);
   overflow: hidden;
 }
 /*Responsive*/
