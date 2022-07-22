@@ -1,8 +1,10 @@
 import React from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import { useDiary } from "../../Contexts/Diary/DiaryContext";
 import "./scribble.css";
 export default function ScribblePad({value, func}){
+    const {diary, setDiary} =useDiary();
     const write = {
         toolbar: [
           ["bold", "italic"],

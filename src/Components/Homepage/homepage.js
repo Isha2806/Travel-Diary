@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
-import {ScribblePad,Diary,Colors} from "../index";
+import {ScribblePad,Diary,Colors,Label} from "../index";
 import { useDiary } from "../../Contexts/Diary/DiaryContext";
 
 export default function HomePage(){
@@ -31,13 +31,14 @@ export default function HomePage(){
     }
     return (<>
       <div className="home">
+      <Label/>
         <form className="newDiary">
           <input 
             type = "text"
             name="heading"
             value={diary.heading}
             onChange= {(e)=>inputHandler(e)}
-            placeholder="Idhar likhne ka...."
+            placeholder="My Journey Started with...."
             className="headingText"
             required
             />
@@ -53,6 +54,7 @@ export default function HomePage(){
            ➕
           </button>
           <Colors/>
+          
           </div>
          
         </form>
@@ -60,9 +62,11 @@ export default function HomePage(){
         <p className="heading-2">My Travel Notes!</p>
         <div className="listOfDiary">
          
+         {diaries?.map((diary)=>(
+          <Diary key = {diary._id} diary={diary}/>
+         ))}
+          
          
-          <Diary diary={diary}/>
-          <Diary diary={diary}/>
 
 
         
