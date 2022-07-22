@@ -17,8 +17,8 @@ html {
   --primary-color: #2b81e4;
   --secondary-color:#e8ac08;
   --white-color: #fff;
-  --grey-color: #555;
-  --light-grey-color: #777;
+  --grey-color:  rgb(59, 56, 56);
+  --light-grey-color:rgb(227, 77, 77);
 }
 
 .center {
