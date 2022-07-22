@@ -17,8 +17,8 @@ html {
   --primary-color: #2b81e4;
   --secondary-color:#e8ac08;
   --white-color: #fff;
-  --grey-color: #555;
-  --light-grey-color: #777;
+  --grey-color:  rgb(59, 56, 56);
+  --light-grey-color:rgb(227, 77, 77);
 }
 
 .center {
@@ -28,8 +28,8 @@ html {
 }
 
 .container {
-  margin: 3.5rem;
-  box-shadow: 0 1rem 3rem var(--grey-color);
+  margin:  1.5rem 11.5rem;
+  box-shadow: 0 3rem 3rem var(--grey-color);
   overflow: hidden;
 }
 /*Responsive*/
